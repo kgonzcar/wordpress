@@ -1,0 +1,5 @@
+Get Pod name
+# oc describe pod wordpress-6c4459d57f-bd8fz
+
+Add scc
+# oc adm policy add-scc-to-user anyuid system:serviceaccount:wordpress:default
