@@ -12,6 +12,19 @@ spec:
     tier: frontend
   type: LoadBalancer
 ---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: demo-sc-shared
+provisioner: pxd.portworx.com
+parameters:
+  #openstorage.io/auth-secret-name: px-user-token
+  #openstorage.io/auth-secret-namespace: portworx
+  repl: "3"
+  priority_io: "high"
+  sharedv4: "true"
+allowVolumeExpansion: true
+---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
