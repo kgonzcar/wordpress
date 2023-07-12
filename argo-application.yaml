@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: word-press
+  name: word-press-demo
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: wp-demo
+    namespace: wordpress
     server: https://kubernetes.default.svc
   project: default
   source:
