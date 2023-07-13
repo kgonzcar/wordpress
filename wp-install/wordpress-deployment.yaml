@@ -17,7 +17,7 @@ kind: Route
 metadata:
   name: wp
 spec:
-  host: wp.apps.ocs2.px-test.prlb.flr.c360cloud.com
+  host: argo-wp.apps.ocs2.px-test.prlb.flr.c360cloud.com
   port:
     targetPort: 80
   to:
