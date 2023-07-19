@@ -1,7 +1,9 @@
 secretGenerator:
 - name: mysql-pass
+  namespace: argo-wp
   literals:
   - password=02081977
 resources:
+  - wp-namespace.yaml
   - mysql-deployment.yaml
   - wordpress-deployment.yaml
