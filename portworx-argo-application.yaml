@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: portworx/
+    path: portworx-cluster-a/
     repoURL: https://github.com/kgonzcar/wordpress
     targetRevision: main
   syncPolicy:
